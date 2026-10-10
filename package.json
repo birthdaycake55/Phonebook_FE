@@ -8,9 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "server": "json-server -p 3001 db.json",
-    "build:ui": "shx rm -rf dist && cd ../notes && npm run build && shx cp -r dist ../phonebook_BE/dist",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "server": "json-server -p 3001 db.json"
   },
   "dependencies": {
     "axios": "^1.20.0",
