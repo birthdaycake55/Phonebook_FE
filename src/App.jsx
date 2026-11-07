@@ -67,6 +67,13 @@ function App(){
             setNotifMsg(null)
           },5000)
         })
+        .catch(error =>{
+          setNotifSetting('error')
+          setNotifMsg(error.response.data.error) //to access the error
+          setTimeout(()=>{
+            setNotifMsg(null)
+          },5000)
+        })
     }
   }
 
